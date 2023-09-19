@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/img">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="25dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" PASSWORD RESET"
+            android:textSize="25sp"
+            android:id="@+id/password"
+
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_profile"
+            android:layout_below="@id/password"
+            android:hint="Email*"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:padding="7dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_profile"
+            android:background="@color/purple_700"
+            android:hint="Enter ur registered email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="7dp">
+
+        </EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetbtn"
+            android:layout_below="@+id/reset"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="RESET"
+
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#808080"
+            android:textColor="@color/black"
+            android:text="CANCEL"
+            >
+
+        </Button>
+    </RelativeLayout>
+
+
+</ScrollView>

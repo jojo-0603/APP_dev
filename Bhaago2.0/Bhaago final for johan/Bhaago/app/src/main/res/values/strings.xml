@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name"> StepWise</string>
+    <string name="chalo_bhaago"> StepWise</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_up_to_start_your_new_journey">Sign UP to start your new journey</string>
+    <string name="full_name">Full Name</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="go">GO</string>
+    <string name="already_have_an_account_login">Already have an account? LOGIN</string>
+    <string name="hello_budyy_welcome_back">Hello Budyy WELCOME BACK</string>
+    <string name="username">Username</string>
+    <string name="password1">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">LOGIN!!!!!!</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="todo">TODO</string>
+    <string name="j">------</string>
+    <string name="distance_Covered_metr">Distance Covered(Metre)</string>
+    <string name="calories_burnt_ca">Calories Burnt (Cal)</string>
+    <string name="cb">cb</string>
+</resources>

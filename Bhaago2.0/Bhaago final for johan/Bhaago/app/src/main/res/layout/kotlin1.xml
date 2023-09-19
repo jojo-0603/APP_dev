@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    tools:context=".Kotlin1">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="100dp">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            app:cpb_background_progressbar_color="#F2F2F2"
+            app:cpb_background_progressbar_width="20dp"
+            app:cpb_progress_max="10000"
+            app:cpb_progressbar_color="#F44336"
+            app:cpb_progressbar_width="15dp"
+            app:cpb_round_border="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_stepsTaken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tv_totalMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_stepsTaken"
+            android:layout_centerInParent="true"
+            android:text="/10000"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/newtext"
+            android:layout_width="187dp"
+            android:layout_height="30dp"
+            android:text="@string/distance_Covered_metr"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="1232dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="182dp"
+            android:layout_height="46dp"
+            android:autofillHints=""
+            android:hint="@string/cb"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="1815dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calories_burnt_ca"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="1132dp" />
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="196dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/cb"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#90A4AE"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+    </LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        />-->
+
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+
+        android:layout_marginTop="30sp"
+        android:fontFamily="serif"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="40sp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_to_start_your_new_journey"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="21sp"
+        android:layout_marginStart="20sp"
+       >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FULL NAME"
+
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30dddddd"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WEIGHT  (in Kg)"
+            android:textColorHint="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30dddddd"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HEIGHT (in cm)"
+            android:textColorHint="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30dddddd"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:hint="EMAIL"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30dddddd"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:textColorHint="@color/white"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30dddddd"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:text=" SIGN IN  "
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        tools:ignore="VisualLintButtonSize">
+
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account_login"
+        android:background="#0000"
+        android:textColor="@color/white"
+        android:id="@+id/Login"
+        android:layout_marginTop="10dp"
+        tools:ignore="VisualLintButtonSize">
+
+    </Button>
+
+</LinearLayout>

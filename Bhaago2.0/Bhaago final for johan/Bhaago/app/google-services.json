@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759242319049",
+    "project_id": "bhaago-2380f",
+    "storage_bucket": "bhaago-2380f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759242319049:android:bcbf20073b675af7931918",
+        "android_client_info": {
+          "package_name": "com.example.bhaago"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759242319049-4qro6t1it392a4rm2t351dm74691nk3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLC8KvRaR9WAgJGnawHnKjqpHel7QjkPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759242319049-4qro6t1it392a4rm2t351dm74691nk3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
