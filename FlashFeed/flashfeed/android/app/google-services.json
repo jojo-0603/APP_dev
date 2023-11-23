@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "177000950878",
+    "project_id": "flashfeed-16793",
+    "storage_bucket": "flashfeed-16793.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177000950878:android:56b7d57a9816463f7d58cf",
+        "android_client_info": {
+          "package_name": "com.example.flashfeed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177000950878-sa38kghkdoa42p2vfjpt7j8mv5tff3ie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flashfeed",
+            "certificate_hash": "db5f8ebde3f3d9ec222e51f0e2d530f3be24e154"
+          }
+        },
+        {
+          "client_id": "177000950878-98gbf2jai4nk1b4h8q69ubjsebfgl598.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkWTQWpY9IeFM3oEj2hiqpSs0JeIpGnKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177000950878-98gbf2jai4nk1b4h8q69ubjsebfgl598.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "177000950878-mrev54gh4l41qj9l9tiubfe1pvddcfjp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flashfeed.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

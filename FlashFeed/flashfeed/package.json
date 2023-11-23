@@ -1,0 +1,15 @@
+{
+  "name": "node_packages",
+  "version": "1.0.0",
+  "description": "this is for node packages",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johan",
+  "license": "ISC"
+}

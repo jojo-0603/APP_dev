@@ -35,6 +35,14 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  firebase_core: ^2.23.0
+  firebase_auth: ^4.14.1
+  google_sign_in: ^6.1.6
+  http: ^1.1.0
+  carousel_slider: ^4.2.1
+  smooth_page_indicator: ^1.1.0
+  cached_network_image: ^3.3.0
+  webview_flutter: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +82,19 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  assets:
+          - lib/assests/login.jpg
+          - lib/assests/splashscreen.jpg
+          - lib/assests/bi_github.png
+          - lib/assests/devicon_facebook.png
+          - lib/assests/devicon_google.png
+          - lib/assests/building.jpg
+          - lib/assests/business.jpg
+          - lib/assests/entertainment.jpg
+          - lib/assests/general.jpg
+          - lib/assests/health.jpg
+          - lib/assests/science.jpg
+          - lib/assests/sport.jpg
   # fonts:
   #   - family: Schyler
   #     fonts:
