@@ -1,3 +1,4 @@
+import 'package:flashfeed/components/shimmerArrow.dart';
 import 'package:flashfeed/pages/home.dart';
 import 'package:flashfeed/pages/login&Register/auth.dart';
 import 'package:flashfeed/pages/login&Register/login.dart';
@@ -32,8 +33,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
- 
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -43,41 +42,46 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: const BoxDecoration(
-              
-                image: DecorationImage(
-                  opacity: 0.7,
-                    image: AssetImage('lib/assests/splashscreen.jpg'),
-                    fit: BoxFit.fill,
-                    )),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [Center(
-                child: Text("      Welcome News Reader\nLets Get The Reading Started",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight:FontWeight.bold
-                
-                ),),
-              ),
-              SizedBox(height: 30),
-                Container(
-                  width: 300,
-                  height: 100,
-                  child: ElevatedButton(
-                    
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => AuthPage(), // put authPage() here
-                          ),
-                        );
-                      },
-                      child: Text("Lets Go",style: TextStyle(color: Colors.black87,fontSize: 25,fontWeight: FontWeight.w800
-                      ))),
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+        opacity: 0.9,
+        image: AssetImage('lib/assests/splashscreen.jpg'),
+        fit: BoxFit.fill,
+      )),
+      child: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.black12, Colors.black54, Colors.black87])),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: 60),
+              Center(
+                child: Text(
+                  " Welcome News Reader",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
                 ),
-              ],
-            )));
+              ),
+              SizedBox(height: 380),
+              Center(
+                child: Text(
+                  "   Scroll To Read",
+                  style: TextStyle(
+                      color:Colors.white70,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(height: 10),
+              ShimmerArrow(),
+            ],
+          )),
+    ));
 
     // This trailing comma makes auto-formatting nicer for build methods.
   }

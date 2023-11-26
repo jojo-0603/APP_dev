@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import "package:flutter/src/widgets/framework.dart";
 
 class MyTextField extends StatelessWidget {
+  
   final controller;
   final String hintText;
   final bool obscureText;
@@ -12,6 +14,8 @@ class MyTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool passTogle=true;
+
     // TODO: implement build
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal:25,vertical: 10),
@@ -28,9 +32,12 @@ class MyTextField extends StatelessWidget {
                   color: Colors.blueGrey, width: 2, style: BorderStyle.solid)),
           fillColor: Colors.white,
           filled: true,
-          hintText: hintText
+          hintText: hintText,
+         
         ),
       ),
     );
   }
+
+  
 }

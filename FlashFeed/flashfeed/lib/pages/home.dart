@@ -158,7 +158,7 @@ class _MyMainPageState extends State<MyMain> {
                           GestureDetector(
                             onTap: (){
                               Navigator.push(context,
-            MaterialPageRoute(builder: (context) => AllNews(news: "CURRENT")));
+            MaterialPageRoute(builder: (context) => AllNews(news: "RECENT")));
       
                             },
                             child: Text(

@@ -6,10 +6,9 @@ import 'package:flashfeed/components/tile.dart';
 import 'package:flashfeed/pages/login&Register/services.dart';
 import 'package:flutter/material.dart';
 
-
 class MyLoginPage extends StatefulWidget {
   final Function()? onTap;
- const MyLoginPage({super.key, required this.onTap});
+  const MyLoginPage({super.key, required this.onTap});
   @override
   State<MyLoginPage> createState() => _MyLoginPageState();
 }
@@ -18,16 +17,25 @@ class _MyLoginPageState extends State<MyLoginPage>
     with TickerProviderStateMixin {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
- 
 
   void displayerrorpass(String mssg) {
-    showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            title: Text(mssg),
-          );
-        });
+    if (mssg == 'invalid-email') {
+      showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: Text('Enter correct email'),
+            );
+          });
+    }else if (mssg == 'invalid-password'){
+                showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: Text('Enter correct password'),
+            );
+          });
+    }
   }
 
   @override
@@ -74,9 +82,7 @@ class _MyLoginPageState extends State<MyLoginPage>
                 ),
               ),
               SizedBox(height: 30),
-              CustomButton(
-                text: 'Login',
-                onTap: signUserIn),
+              CustomButton(text: 'Login', onTap: signUserIn),
               SizedBox(height: 20),
               Row(
                 children: [
@@ -102,12 +108,16 @@ class _MyLoginPageState extends State<MyLoginPage>
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CustomTile(onTap:()=>FirebaseService.signInwithGoogle(context),
-                  imagePath: 'lib/assests/devicon_google.png'),
+                  CustomTile(
+                      onTap: () => FirebaseService.signInwithGoogle(context),
+                      imagePath: 'lib/assests/devicon_google.png'),
                   SizedBox(width: 40),
-                  CustomTile(onTap: ()=>{},imagePath: 'lib/assests/devicon_facebook.png'),
+                  CustomTile(
+                      onTap: () => {},
+                      imagePath: 'lib/assests/devicon_facebook.png'),
                   SizedBox(width: 40),
-                  CustomTile(onTap: ()=>{},imagePath: 'lib/assests/bi_github.png')
+                  CustomTile(
+                      onTap: () => {}, imagePath: 'lib/assests/bi_github.png')
                 ],
               ),
               SizedBox(height: 20),
@@ -120,9 +130,11 @@ class _MyLoginPageState extends State<MyLoginPage>
                   ),
                   SizedBox(width: 4),
                   GestureDetector(
-                    onTap:widget.onTap,
+                    onTap: widget.onTap,
                     child: Text('Register Now! ',
-                        style: TextStyle(color: Colors.blueAccent,fontWeight: FontWeight.bold)),
+                        style: TextStyle(
+                            color: Colors.blueAccent,
+                            fontWeight: FontWeight.bold)),
                   ),
                 ],
               )

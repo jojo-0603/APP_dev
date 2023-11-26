@@ -43,6 +43,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   cached_network_image: ^3.3.0
   webview_flutter: ^3.0.1
+  page_transition: ^2.1.0
 
 dev_dependencies:
   flutter_test:

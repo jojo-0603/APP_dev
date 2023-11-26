@@ -14,7 +14,7 @@ class _ArticleViewPageState extends State<ArticleView> {
     return Scaffold(
       appBar:AppBar(
       title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text("Flash"),
             Text(
